@@ -6,34 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cooper's Resume</title>
     <link rel="stylesheet" href="./style.css">
-
+    <script src="./script.js"></script>
 </head>
 
 <body>
     <nav>
-      <div class="nav-container">
-        <a href="#" class="logo">
-
-        <div class="mobile-menu">
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-
-        <ul class="nav-links">
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
     </nav>
 
 
     <header>
-      <div class="header-content">
-        <h1>Joseph Cooper</h1>
-        <p>Former NASA Test Pilot, Aerospace Engineer, Farmer and Commander of the Endurance Mission</p>
-        <a href="#about" class="btn">Let's Explore</a>
-      </div>
+        <div class="header-content">
+            <h1>Joseph Cooper</h1>
+            <p>Former NASA Test Pilot, Aerospace Engineer, Farmer and Commander of the Endurance Mission</p>
+            <a href="#about" class="btn">Let's Explore</a>
+        </div>
     </header>
 
     <section id="about" class="about">
@@ -41,8 +36,7 @@
             <h2 class="section-title">Professional Summary</h2>
             <div class="about-content">
                 <div class="profile-img">
-                    <img src="Interstellar Wallpaper for iPhone X_XR_11_11 Pro_12_12 Pro_13.jpg"
-                        alt="Profile Picture" />
+                    <img src="./cooper.jpg" alt="Profile Picture" />
                 </div>
                 <div class="about-text">
                     <h3>Former NASA Test Pilot | Aerospace Engineer | Mission Commander</h3>
@@ -59,8 +53,7 @@
 
     <div id="projects" class="container">
         <h2 class="section-title">Professional Experience</h2>
-        <div class="projects-container">
-
+        <div>
             <div class="project-card">
                 <div class="project-info">
                     <h3>NASA - Lazarus Mission</h3>
@@ -101,16 +94,10 @@
         </div>
     </div>
 
-    <br>
-    <br>
-    <br>
-
     <div id="skills" class="container">
         <div class="skills-container">
             <div class="skill-card">
                 <h2 class="section-title">Technical</h2>
-                <div class="skill-icon">
-                </div>
                 <ul>
                     <li>Spacecraft Operations</li>
                     <li>Advanced Flight Systems</li>
@@ -121,85 +108,85 @@
 
             <div class="skill-card">
                 <h2 class="section-title">Skills</h2>
-                <div class="skill-icon">
-                </div>
                 <ul>
                     <li>Space Mission Planning / Leadership</li>
                     <li>Precision Agriculture Technology</li>
                     <li>Deep Space Navigation</li>
                     <li>Strategic Decision-Making</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="education" class="container">
+        <div class="projects-container">
+            <div class="project-card">
+                <div class="project-info">
+                    <h2 class="section-title">Education</h2>
+                    <p>Bachelor of Science in Aerospace Engineering</p>
+                    <h3>Certifications</h3>
+                    <br>
+                    <ol>
+                        <li>NASA Flight Certification</li>
+                        <li>Test Pilot Qualification</li>
+                        <li>Spacecraft Command Certification</li>
+                        <li>Advanced Survival Training</li>
+                    </ol>
+                </div>
             </div>
 
-            <div id="education" class="container">
-                <div class="projects-container">
-                    <div class="project-card">
-                        <div class="project-info">
-                            <h2 class="section-title">Education</h2>
-                            <p>Bachelor of Science in Aerospace Engineering</p>
-                            <h3>Certifications</h3>
-                            <br>
-                            <ol>
-                                <li>NASA Flight Certification</li>
-                                <li>Test Pilot Qualification</li>
-                                <li>Spacecraft Command Certification</li>
-                                <li>Advanced Survival Training</li>
-                            </ol>
+            <div class="flip-card-wrapper">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="./coop.jpg" class="img">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Favorite Quote</h1>
+                            <p>"We used to look up at the sky and wonder at our place in the stars. Now we just look
+                                down and worry about our place in the dirt."</p>
+                            <p><em>-Joseph Cooper</em></p>
                         </div>
                     </div>
+                </div>
+            </div>
 
-                    <div class="flip-card-wrapper">
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <img src="./coop.jpg" class="img">
-                                </div>
-                                <div class="flip-card-back">
-                                    <h1>Favorite Quote</h1>
-                                    <p>"We used to look up at the sky and wonder at our place in the stars. Now we just look
-                                        down and worry about our place in the dirt."</p>
-                                    <p><em>-Joseph Cooper</em></p>
-                                </div>
-                            </div>
+            <section id="contact" class="contact-section">
+                <div class="container">
+                    <h2 class="section-title">Contact Info</h2>
+                    <div class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Phone</label>
+                            <p>+1 (282) 929-1989</p>
                         </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <a href="mailto:joseph.cooper@nasa.gov">joseph.cooper@nasa.gov</a>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="linkedin">LinkedIn</label>
+                            <a href="https://www.linkedin.com/in/josephcooper" target="_blank"
+                                rel="noopener noreferrer">linkedin.com/in/josephcooper</a>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" placeholder="Enter your message"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn">Send Message</button>
                     </div>
+                </div>
+            </section>
 
-    <section id="contact" class="contact-section">
-      <div class="container">
-        <h2 class="section-title" style="color: white">Contact Info</h2>
-        <div class="contact-form">
-          <div class="form-group">
-            <label for="name">Phone</label>
-            <p>+1 (282) 929-1989</p>
-          </div>
+            <footer>
+                <div class="footer-container">
+                    <p>© 2026 Cooper's Resume. See you in Space</p>
+                </div>
+            </footer>
 
-          <div class="form-group">
-            <label for="email">Email</label>
-            <a href="mailto:joseph.cooper@nasa.gov">joseph.cooper@nasa.gov</p>
-          </div>
-
-          <div class="form-group">
-            <label for="email">LinkdIn</label>
-            <a href="https://www.linkedin.com/in/josephcooper"></a>
-          </div>
-
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea
-              id="message"
-              class="form-control"
-              placeholder="Enter your message"
-            ></textarea>
-          </div>
-
-          <button
-            type="submit"
-            class="btn"
-            style="background: white; color: #3498db"
-          >
-            Send Message
-          </button>
-        </div>
-      </div>
-    </section>
 </body>
+
 </html>
